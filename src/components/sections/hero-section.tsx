@@ -79,7 +79,7 @@ const HeroSection = () => {
           </div>
           
           <div className="mt-10 flex flex-col sm:flex-row items-center gap-5 max-w-2xl mx-auto">
-            <a href={process.env.NEXT_PUBLIC_PORTFOLIO_URL || '/'} className="group inline-flex items-center justify-center gap-3 px-10 py-6 bg-white text-[#051a2f] rounded-full font-bold text-base transition-all duration-300 hover:scale-105 hover:shadow-accent/40 hover:shadow-[0_8px_24px]">
+            <a href="https://wsnusptr.github.io/Portofolio-WisnuSaputra-Terbaru2025/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center gap-3 px-10 py-6 bg-white text-[#051a2f] rounded-full font-bold text-base transition-all duration-300 hover:scale-105 hover:shadow-accent/40 hover:shadow-[0_8px_24px]">
               <span>Kembali ke Portofolio</span>
               <div className="relative w-5 h-5">
                 <div className="absolute inset-0 transition-all duration-300 ease-in-out transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
