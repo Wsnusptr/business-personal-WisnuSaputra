@@ -1,0 +1,135 @@
+# ========================================
+# GITIGNORE - PORTOFOLIO WISNU SAPUTRA
+# ========================================
+# File ini mencegah file yang tidak perlu masuk ke GitHub
+
+# ========================================
+# DEPENDENCIES
+# ========================================
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ========================================
+# TESTING
+# ========================================
+/coverage
+
+# ========================================
+# NEXT.JS BUILD
+# ========================================
+/.next/
+/out/
+
+# ========================================
+# PRODUCTION BUILD
+# ========================================
+/build
+/dist
+
+# ========================================
+# ENVIRONMENT VARIABLES (PENTING!)
+# ========================================
+# File .env.local berisi URL development lokal
+# JANGAN di-commit ke GitHub!
+.env*.local
+.env.local
+.env
+
+# File .env.example BOLEH di-commit (template saja)
+!.env.example
+
+# ========================================
+# GENERATED FILES
+# ========================================
+# File config.js di-generate otomatis saat build
+# Tidak perlu di-commit karena akan di-generate ulang
+/public/config.js
+
+# ========================================
+# VERCEL
+# ========================================
+.vercel
+
+# ========================================
+# TYPESCRIPT
+# ========================================
+*.tsbuildinfo
+next-env.d.ts
+
+# ========================================
+# LOGS & DEBUG
+# ========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# ========================================
+# OS FILES
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.pem
+
+# ========================================
+# IDE / EDITOR
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ========================================
+# AI TOOLS & CODE ASSISTANTS
+# ========================================
+.qodo/
+.zencoder/
+.cursor/
+.copilot/
+.codeium/
+
+# ========================================
+# TEMPORARY FILES
+# ========================================
+*.tmp
+*.temp
+.cache
+
+# ========================================
+# CATATAN DEPLOYMENT:
+# ========================================
+# ✅ File yang AKAN di-commit ke GitHub:
+#    - .env.example (template)
+#    - package.json, package-lock.json, pnpm-lock.yaml, bun.lock
+#    - Source code (.tsx, .ts, .html, .css)
+#    - scripts/generate-config.js
+#    - Documentation (.md files)
+#    - Public assets (images, fonts, etc.)
+#
+# ❌ File yang TIDAK AKAN di-commit:
+#    - .env.local (development URLs & secrets)
+#    - /node_modules (dependencies - akan di-install otomatis)
+#    - /.next (build output - akan di-generate saat deploy)
+#    - /public/config.js (generated file)
+#    - .vscode, .qodo, .zencoder (IDE & AI tools config)
+#    - .vercel (Vercel deployment config)
+#
+# 🚀 UNTUK DEPLOYMENT VERCEL:
+#    1. Push code ke GitHub (file di atas akan otomatis diabaikan)
+#    2. Connect repository ke Vercel
+#    3. Vercel akan otomatis install dependencies & build
+#    4. Set environment variables di Vercel dashboard
+# ========================================
