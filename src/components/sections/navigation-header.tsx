@@ -33,9 +33,8 @@ const NavigationHeader = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const headerClasses = `sticky top-0 z-[1000] w-full transition-colors duration-300 ${
-    isScrolled ? "bg-[#0A0F1E]/95 backdrop-blur-md" : "bg-[#0A0F1E]"
-  }`;
+  const headerClasses = `sticky top-0 z-[1000] w-full transition-colors duration-300 ${isScrolled ? "bg-[#0A0F1E]/95 backdrop-blur-md" : "bg-[#0A0F1E]"
+    }`;
 
   return (
     <header className={headerClasses}>
@@ -97,9 +96,9 @@ const NavigationHeader = () => {
             asChild
             className="bg-purple-accent hover:bg-purple-accent/90 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 flex items-center gap-2"
           >
-            <a 
-              href="https://wsnusptr.github.io/Portofolio-WisnuSaputra-Terbaru2025/" 
-              target="_blank" 
+            <a
+              href="https://portofolio-wisnu-saputra-terbaru202.vercel.app/"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -107,7 +106,7 @@ const NavigationHeader = () => {
             </a>
           </Button>
         </div>
-        
+
         {/* Mobile Navigation Trigger */}
         <div className="lg:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -159,15 +158,15 @@ const NavigationHeader = () => {
                     {link.label}
                   </Link>
                 ))}
-                
+
                 {/* Mobile Portfolio Button */}
                 <Button
                   asChild
                   className="bg-purple-accent hover:bg-purple-accent/90 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 flex items-center gap-2 mt-4"
                 >
-                  <a 
-                    href="https://wsnusptr.github.io/Portofolio-WisnuSaputra-Terbaru2025/" 
-                    target="_blank" 
+                  <a
+                    href="https://portofolio-wisnu-saputra-terbaru202.vercel.app/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
